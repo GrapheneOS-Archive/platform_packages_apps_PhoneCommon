@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
+    namespace "com.android.phone.common"
+    compileSdk 35
     sourceSets.main {
         java.srcDirs = ['src']
-        manifest.srcFile 'AndroidManifest.xml'
         res.srcDirs = ['res']
     }
 }
